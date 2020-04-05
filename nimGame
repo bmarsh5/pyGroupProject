@@ -1,0 +1,66 @@
+"""
+Name:
+CSC 119-001
+Date:040220
+Program Name:nimGame
+Description:
+            From a pile of marbles, a player or the computer may take up to
+            half of the marbles on each turn.  The player who takes the last
+            marble loses.
+
+            You will note that the computer cannot be beaten in smart mode when it has the
+            first move, unless the pile size happens to be 15, 31, or 63. 
+            Of course, a human player who has the first turn and knows the winning strategy
+            can win against the computer.
+
+Bryan- Bartender
+Jim- Meeting Organizer
+Kiara- Coding expert
+
+Sources
+"""
+import random
+
+def main():
+    # variables 
+    pileSize = 0
+    goFirst = 0
+    computerMode = 0
+    
+    # input
+    '''Generate a random integer between 10 and 100 for pile size. '''
+                #### Jim
+    '''Generate a random integer of 0 or 1 for first turn. '''
+                #### Bryan
+    '''Generate a random integer of 0 or 1 for computer mode (smart or stupid). '''
+                #### Kiara
+    '''User input code to decide how many marble user chooses to take. '''
+
+
+
+    # process formulas
+    
+    ''' Smart Mode process '''
+# In smart mode the computer takes off enough marbles to make
+# the size of the pile a power of two minus 1—that is, 3, 7, 15, 31, or 63.
+            #### Jim
+# That is always a legal move, except when the size of the pile is currently one less than a power of two.
+# In that case, the computer makes a random legal move
+            #### Kiara
+
+    ''' Stupid Mode process '''
+# the computer simply takes a random legal value (between 1 and n/2) from the pile whenever it has a turn
+            #### Bryan
+
+    '''User turn process '''
+            #### Bryan
+
+    ''' Size of pile calculation '''
+# Run the script which chooses whose turn this is, and either asks for user input or
+            ####  Bryan can write an outline, based on our code, and help with logic
+            #### W/ Jim & Kiara helping to code
+    
+    # output
+    print("The size of the pile is now:", pileSize)
+
+main()
